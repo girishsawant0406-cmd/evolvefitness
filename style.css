@@ -1,0 +1,48 @@
+:root {
+  --primary-color:yellow;
+  --primary-text-color:white;
+  --secondary-text-color:yellow;
+  --description-text-size:16px;
+  --subtitle-text-size:22px;
+  --title-text-size:40px;
+  --heading-text-size:64px;
+  --font-bold:700;
+  --font-medium:500;
+  --font-regular:400;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.title-logo {
+  font-size: 45px;
+}
+
+.menu-bar {
+  font-size: var(--subtitle-text-size);
+  font-weight: var(--font-medium);
+}
+
+.banner-keyword1 {
+  font-weight: var(--font-bold);
+  font-size: 80px;
+}
+
+.banner-subtitle {
+  font-size: var(--subtitle-text-size);
+  color: var(--primary-text-color);
+}
+
+#cta-button {
+  background-color: yellow;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
