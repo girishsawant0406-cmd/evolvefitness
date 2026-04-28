@@ -1,0 +1,112 @@
+ body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            padding: 80px 0;
+        }
+
+        /* Typography Refinement */
+        .main-title {
+            font-weight: 900;
+            line-height: 0.95;
+            font-size: 3.5rem;
+            letter-spacing: -1px;
+        }
+
+        .text-accent-yellow { color: #facc15; }
+        .text-neon-blue { color: #38bdf8; }
+
+        /* Section Tag Line */
+        .section-tag {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-tag::after {
+            content: "";
+            height: 2px;
+            width: 40px;
+            background: linear-gradient(90deg, #38bdf8, transparent);
+            display: inline-block;
+        }
+
+        /* Exact Card Styling */
+        .bg-glass { 
+            background: rgba(255, 255, 255, 0.02); 
+            border: 1px solid rgba(56, 189, 248, 0.3); /* Subtle blue glow border */
+            border-radius: 12px;
+            transition: all 0.4s ease;
+        }
+        
+        .bg-glass:hover {
+            border-color: #38bdf8;
+            background: rgba(56, 189, 248, 0.05);
+            box-shadow: inset 0 0 20px rgba(56, 189, 248, 0.1);
+        }
+
+        .yellow-bar {
+            width: 25px;
+            height: 2px;
+            background-color: #facc15;
+            margin: 10px auto 15px;
+        }
+
+        .icon-circle {
+            width: 55px;
+            height: 55px;
+            border: 1px solid #38bdf8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            color: #38bdf8;
+            font-size: 1.3rem;
+        }
+
+        /* Description Box Styling */
+        .description-box {
+            border-left: 4px solid #facc15;
+            padding-left: 1.5rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Footer Stats Bar */
+        .footer-stats {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.01);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* The glowing line at the bottom of the stats bar */
+        .footer-stats::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #facc15, transparent);
+            box-shadow: 0 -2px 10px rgba(250, 204, 21, 0.5);
+        }
+
+        .stat-icon {
+            font-size: 2rem;
+            color: #facc15;
+            opacity: 0.9;
+        }
+
+        .vertical-divider {
+            width: 1px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+        }
